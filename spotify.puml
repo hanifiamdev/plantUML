@@ -1,6 +1,13 @@
 @startuml
 entity Artist {
-
+    * id : VARCHAR
+    --
+    * name : VARCHAR
+    instagram : VARCHAR
+    facebook : VARCHAR
+    twitter : VARCHAR
+    wikipedia : VARCHAR
+    bio : TEXT
 }
 
 entity Album {
