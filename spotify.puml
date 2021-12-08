@@ -108,5 +108,7 @@ User ||--o{ Podcast
 Podcast ||--o{ Episode
 Artist }|--o{ Concert
 User }o--o{ Artist : Follow
+User }o--o{ Song : Liked Song
+
 
 @enduml
