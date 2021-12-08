@@ -38,7 +38,13 @@ entity Category {
 }
 
 entity Playlist {
-
+    * id : VARCHAR
+    --
+    * name : VARCHAR
+    description : TEXT
+    image : VARCHAR
+    category_id : VARCHAR
+    * user_id : VARCHAR
 }
 
 entity Podcast {
