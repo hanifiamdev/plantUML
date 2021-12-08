@@ -79,10 +79,16 @@ entity Episode {
 }
 
 entity User {
+    * id : VARCHAR
+    --
+    * email : VARCHAR
+    * name : VARCHAR
+    birthday : DATE
 
 }
 
 entity Concert {
+
 
 }
 
