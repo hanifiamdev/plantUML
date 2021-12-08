@@ -28,7 +28,7 @@ entity Song {
 
 }
 
-entity Category {
+entity PlaylistCategory {
     * id : VARCHAR
     --
     * name : VARCHAR
@@ -36,6 +36,7 @@ entity Category {
     * icon : VARCHAR
 
 }
+
 
 entity Playlist {
     * id : VARCHAR
@@ -47,7 +48,23 @@ entity Playlist {
     * user_id : VARCHAR
 }
 
+entity PodcastCategory {
+    * id : VARCHAR
+    --
+    * name : VARCHAR
+    * image : VARCHAR
+    * icon : VARCHAR
+
+}
+
 entity Podcast {
+    * id : VARCHAR
+    --
+    * name : VARCHAR
+    about : TEXT
+    image : VARCHAR
+    category_id : VARCHAR
+    * user_id : VARCHAR
 
 }
 
