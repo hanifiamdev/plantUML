@@ -98,4 +98,6 @@ entity Concert {
 
 }
 Artist }|--|{ Album
+Album ||--|{ Song
+Artist }|--|{ Song
 @enduml
