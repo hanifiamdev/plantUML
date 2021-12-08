@@ -97,16 +97,16 @@ entity Concert {
    lat : DOUBLE
 
 }
-Artist }|--|{ Album
-Album ||--|{ Song
-Artist }|--|{ Song
-PlaylistCategory |o--|{ Playlist
+Artist }|--|{ Album : Has
+Album ||--|{ Song : Contains
+Artist }|--|{ Song : Sing
+PlaylistCategory |o--|{ Playlist : Contains
 User ||--o{ Playlist : Create
-Playlist }o--o{ Song
+Playlist }o--o{ Song : Contains
 PodcastCategory |o--|{ Podcast
-User ||--o{ Podcast
-Podcast ||--o{ Episode
-Artist }|--o{ Concert
+User ||--o{ Podcast : Create
+Podcast ||--o{ Episode : Contains
+Artist }|--o{ Concert : Perform
 User }o--o{ Artist : Follow
 User }o--o{ Song : Liked Song
 User }o--o{ Playlist : Follow
