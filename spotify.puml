@@ -100,4 +100,7 @@ entity Concert {
 Artist }|--|{ Album
 Album ||--|{ Song
 Artist }|--|{ Song
+PlaylistCategory |o--|{ Playlist
+User ||--|{ Playlist
+Playlist }o--o{ Song
 @enduml
