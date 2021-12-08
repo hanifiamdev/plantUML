@@ -105,5 +105,6 @@ User ||--o{ Playlist
 Playlist }o--o{ Song
 PodcastCategory |o--|{ Podcast
 User ||--o{ Podcast
+Podcast ||--o{ Episode
 
 @enduml
