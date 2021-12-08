@@ -107,5 +107,6 @@ PodcastCategory |o--|{ Podcast
 User ||--o{ Podcast
 Podcast ||--o{ Episode
 Artist }|--o{ Concert
+User }o--o{ Artist : Follow
 
 @enduml
