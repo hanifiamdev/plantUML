@@ -11,14 +11,20 @@ entity Artist {
 }
 
 entity Album {
-    *id : VARCHAR
+    * id : VARCHAR
     --
-    *title : VARCHAR
-    *release : YEAR
-    *image : VARCHAR
+    * title : VARCHAR
+    * release : YEAR
+    * image : VARCHAR
 }
 
 entity Song {
+    * id : VARCHAR
+    --
+    * album_id : VARCHAR
+    * title : VARCHAR
+    * duration : TIME
+
 
 }
 
