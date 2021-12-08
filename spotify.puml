@@ -29,6 +29,11 @@ entity Song {
 }
 
 entity Category {
+    * id : VARCHAR
+    --
+    * name : VARCHAR
+    * image : VARCHAR
+    * icon : VARCHAR
 
 }
 
